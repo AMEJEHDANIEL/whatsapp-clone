@@ -1,0 +1,33 @@
+[debug] [2020-12-16T18:09:50.500Z] ----------------------------------------------------------------------
+[debug] [2020-12-16T18:09:50.534Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MR EJEH DANIEL ALOGO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-12-16T18:09:50.539Z] CLI Version:   8.10.0
+[debug] [2020-12-16T18:09:50.540Z] Platform:      win32
+[debug] [2020-12-16T18:09:50.542Z] Node Version:  v12.14.1
+[debug] [2020-12-16T18:09:50.555Z] Time:          Wed Dec 16 2020 19:09:50 GMT+0100 (West Africa Standard Time)
+[debug] [2020-12-16T18:09:50.556Z] ----------------------------------------------------------------------
+[debug] [2020-12-16T18:09:50.557Z] 
+[debug] [2020-12-16T18:09:50.676Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-16T18:09:50.678Z] > authorizing via signed-in user
+[debug] [2020-12-16T18:09:50.680Z] [iam] checking project whats-app-clone-a7d13 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-12-16T18:09:50.691Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/whats-app-clone-a7d13:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-12-16T18:09:50.784Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com
+[debug] [2020-12-16T18:09:50.787Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/whats-app-clone-a7d13  
+ 
+[debug] [2020-12-16T18:09:50.812Z] Server Error. getaddrinfo ENOTFOUND firebase.googleapis.com
+[debug] [2020-12-16T18:09:50.825Z] FirebaseError: Server Error. getaddrinfo ENOTFOUND firebase.googleapis.com
+    at Request._callback (C:\Users\MR EJEH DANIEL ALOGO\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\MR EJEH DANIEL ALOGO\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:223:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at Request.onRequestError (C:\Users\MR EJEH DANIEL ALOGO\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:228:7)
+    at ClientRequest.EventEmitter.emit (domain.js:475:20)
+    at TLSSocket.socketErrorListener (_http_client.js:406:9)
+    at TLSSocket.emit (events.js:223:5)
+    at TLSSocket.EventEmitter.emit (domain.js:475:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+[error] 
+[error] Error: Failed to get Firebase project whats-app-clone-a7d13. Please make sure the project exists and your account has permission to access it.
